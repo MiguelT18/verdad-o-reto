@@ -8,8 +8,10 @@ export default {
         josefin_sans: ['Josefin Sans Variable', 'sans-serif']
       },
       fontSize: {
-        lg: 'clamp(2.2rem, 7.5vw, 2.6rem)',
-        sm: 'clamp(1rem, 3.5vw, 1.2rem)'
+        xs: 'clamp(0.8rem, 3vw, 1rem)',
+        sm: 'clamp(1rem, 3.5vw, 1.2rem)',
+        md: 'clamp(1.2rem, 4vw, 1.4rem)',
+        lg: 'clamp(2.2rem, 7.5vw, 2.6rem)'
       },
       colors: {
         primary_color: '#51005b',

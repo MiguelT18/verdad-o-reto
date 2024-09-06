@@ -1,0 +1,21 @@
+interface PlayerProps {
+  playername: string
+}
+
+export default function PlayerCard({ playername }: PlayerProps) {
+  return (
+    <div className="bg-[#d38600] w-full max-w-[300px] sm:pr-10 pr-6 p-1 rounded-xl flex items-center gap-2 mt-2">
+      <img
+        className="w-[80px] h-auto aspect-square object-cover rounded-lg"
+        src="/images/user-avatars/boys/Boy06.png"
+        alt="Avatar user player"
+      />
+      <div className=" ml-1 pr-1 [&>h3]:text-sm [&>h3]:mb-1 [&>h3]:font-josefin_sans [&>h3]:font-medium">
+        <h3>{playername}</h3>
+        <div className="text-white/60 [&>span]:text-xs [&>span]:px-2 [&>span]:py-1 [&>span]:bg-[#ad6e00] [&>span]:rounded-full">
+          <span>#Dominante</span>
+        </div>
+      </div>
+    </div>
+  )
+}

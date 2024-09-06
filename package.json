@@ -15,6 +15,7 @@
     "@astrojs/tailwind": "^5.1.0",
     "@fontsource-variable/josefin-sans": "^5.0.22",
     "@fontsource/luckiest-guy": "^5.0.20",
+    "@iconify-icon/react": "^2.1.0",
     "@iconify/react": "^5.0.2",
     "@svgr/webpack": "^8.1.0",
     "@types/react": "^18.3.5",
