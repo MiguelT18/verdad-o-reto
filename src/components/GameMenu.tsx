@@ -16,6 +16,24 @@ const PLAYER_TAGS = ['#Dominante', '#Intimidante', '#Poderoso']
 export default function GameMenu() {
   const [inputValue, setInputValue] = useState<string>('')
   const [hasStartedTyping, setHasStartedTyping] = useState<boolean>(false)
+  const [usedColors, setUsedColors] = useState<Set<string>>(new Set())
+
+  const getRandomColor = () => {
+    const availableColors = PLAYER_COLORS.filter(
+      (color) => !usedColors.has(color)
+    )
+
+    if (availableColors.length === 0) return null
+
+    const randomIndex = Math.floor(Math.random() * availableColors.length)
+    const selectedColor = availableColors[randomIndex]
+
+    setUsedColors(
+      (prevUsedColors) => new Set(prevUsedColors.add(selectedColor))
+    )
+
+    return selectedColor
+  }
 
   const handleInputChange = (event: React.ChangeEvent<HTMLInputElement>) => {
     const value = event.target.value
