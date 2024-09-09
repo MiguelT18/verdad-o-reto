@@ -120,7 +120,7 @@ export default function GameMenu() {
   }
 
   const handleSelectColor = (color: string) => {
-    // setMenuColor(false)
+    // setMenuColor(false)  
     setSelectColor(color)
     setPlayerStorage((prevState => ({
       ...prevState,
