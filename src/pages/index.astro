@@ -1,12 +1,8 @@
 ---
-import GameMenu from '../components/GameMenu'
-import Layout from '../layouts/Layout.astro'
+import GameMenu from "../components/GameMenu";
+import Layout from "../layouts/Layout.astro";
 ---
 
 <Layout title="Bienvenido usuario">
-  <main
-    class="bg-secondary_color w-full h-auto max-w-[900px] mx-auto rounded-lg p-4"
-  >
-    <GameMenu client:visible />
-  </main>
+  <GameMenu client:only="react" />
 </Layout>
