@@ -11,7 +11,8 @@ export default {
         xs: 'clamp(0.8rem, 3vw, 1rem)',
         sm: 'clamp(1rem, 3.5vw, 1.2rem)',
         md: 'clamp(1.2rem, 4vw, 1.6rem)',
-        lg: 'clamp(2.2rem, 7.5vw, 2.6rem)'
+        lg: 'clamp(1.6rem, 5vw, 2rem)',
+        xl: 'clamp(2.2rem, 7.5vw, 2.6rem)'
       },
       colors: {
         primary_color: '#4b0054',
