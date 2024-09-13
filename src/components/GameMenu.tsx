@@ -174,7 +174,7 @@ export default function GameMenu() {
             <h2 className="text-xl uppercase font-luckiest_guy tracking-wider text-center">Lista de Jugadores</h2>
           </>
         )}
-        <div className='grid grid-cols-2 max-sm:grid-cols-1 gap-2'>
+        <div className='grid grid-cols-2 max-sm:grid-cols-1 gap-4'>
           {
             playerListStorage?.map((player, index) => (
               <PlayerCard key={index} avatar={player.avatar} playername={player.playername} color={player.color} tag={player.tag} />
